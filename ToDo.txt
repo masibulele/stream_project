@@ -1,0 +1,8 @@
+1. access webpage
+2. create object of website
+3. parse data extract:
+	title, price tags,platform, picture_url
+4.create list of dictionary 
+	
+
+
