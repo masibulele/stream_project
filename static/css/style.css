@@ -1,0 +1,81 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* .navbar {
+  background-color: ;
+} */
+
+.h1{
+  font-size:larger;
+}
+
+
+.hero{
+  background-color: #F3F0ED;
+  height: 60vh;
+}
+
+.hero-bottom{
+  background-color:#E3C2B7;
+  height: 20vh;
+
+}
+
+.inputs{
+  position: relative;
+}
+
+
+.form-control{
+  text-indent: 15px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #B7B6B6;
+  background-color: #F3F0ED;
+}
+
+.form-control:focus{
+  color: #495057;
+  background-color: #fff;
+  border-color: #eee;
+  outline: 0;
+  border-radius: 2px;
+  box-shadow: none;
+  border-bottom: 1px solid #E3C2B7;
+}
+
+.inputs i{
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  color:  #B7B6B6 ;
+  margin: 0;
+
+}
+
+
+.stephen_img{
+  width: 120px;
+  position: relative;
+  bottom: 6.3vh;
+}
+
+
+.game{
+  background-color: #F3F0ED ;
+  max-width: 205px;
+}
+
+.game_img{
+  display: inline-block;
+  
+}
+
+
+.game_theme{
+  font-size: x-small;
+}
+
