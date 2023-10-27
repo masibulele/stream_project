@@ -67,92 +67,34 @@
           Popular games
         </h3>
       </div>
+    
       <div class="container games_list justify-content-center" >
         <div class="row">
-          <div class="game col-lg-3 pt-3 m-4">
-            <div class="game_img_rank mx-0.5">
-              <div class="game_img ">
-                <img src="{{url_for('static',filename='images/capsule_184x69.jpg')}}" alt="video game" class="img-thumbnail">
+          {%for i in range(n)%}
+            <div class="game col-sm-3 pt-3 m-4">
+              <div class="game_img_rank mx-0.5">
+                <div class="game_img ">
+                  <img src="{{games[i]['image']}}" alt="video game" class="img-thumbnail">
+                </div>
+                <span class="rank  font-weight-bold"><strong>{{i+1}}</strong></span>
               </div>
-              <span class="rank  font-weight-bold"><strong>#1</strong></span>
-            </div>
-            <div class="game_details">
-              <p class="game_name">
-                <h6>cities skylines</h6>
-              </p>
-              <p class="game_price ">
-                <strong>R799</strong>
-              </p>
-              <p class="game_theme">
-                simulation, city builder, building , singleplayer
-              </p>
+              <div class="game_details">
+                <p class="game_name">
+                  <h6>{{games[i]['title']}}</h6>
+                </p>
+                <p class="game_price ">
+                  <strong>{{games[i]['price']}}</strong>
+                </p>
+                <p class="game_theme">
+                  {{','.join(games[i]['themes'])}}
+                </p>
 
-            </div>
-
-          </div>
-          <div class="game col-lg-3 pt-3 m-4">
-            <div class="game_img_rank mx-0.5">
-              <div class="game_img ">
-                <img src="{{url_for('static',filename='images/capsule_184x69.jpg')}}" alt="video game" class="img-thumbnail">
               </div>
-              <span class="rank  font-weight-bold"><strong>#1</strong></span>
-            </div>
-            <div class="game_details">
-              <p class="game_name">
-                <h6>cities skylines</h6>
-              </p>
-              <p class="game_price ">
-                <strong>R799</strong>
-              </p>
-              <p class="game_theme">
-                simulation, city builder, building , singleplayer
-              </p>
 
             </div>
-
-          </div>
-          <div class="game col-lg-3 pt-3 m-4">
-            <div class="game_img_rank mx-0.5">
-              <div class="game_img ">
-                <img src="{{url_for('static',filename='images/capsule_184x69.jpg')}}" alt="video game" class="img-thumbnail">
-              </div>
-              <span class="rank  font-weight-bold"><strong>#1</strong></span>
-            </div>
-            <div class="game_details">
-              <p class="game_name">
-                <h6>cities skylines</h6>
-              </p>
-              <p class="game_price ">
-                <strong>R799</strong>
-              </p>
-              <p class="game_theme">
-                simulation, city builder, building , singleplayer
-              </p>
-
-            </div>
-
-          </div>
-          <div class="game col-lg-3 pt-3 m-4">
-            <div class="game_img_rank mx-0.5">
-              <div class="game_img ">
-                <img src="{{url_for('static',filename='images/capsule_184x69.jpg')}}" alt="video game" class="img-thumbnail">
-              </div>
-              <span class="rank  font-weight-bold"><strong>#1</strong></span>
-            </div>
-            <div class="game_details">
-              <p class="game_name">
-                <h6>cities skylines</h6>
-              </p>
-              <p class="game_price ">
-                <strong>R799</strong>
-              </p>
-              <p class="game_theme">
-                simulation, city builder, building , singleplayer
-              </p>
-
-            </div>
-
-          </div>
+          {%endfor%}
+       
+        
         </div>
       </div>
       

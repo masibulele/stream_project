@@ -41,7 +41,7 @@ class StreamScraper:
             resp['title']= info[0]
             resp['image']= info[1]
             resp['price']= info[2]
-            resp['platform']= info[3]
+            resp['themes']= info[3]
             self.data.append(resp)
         return self.data
     

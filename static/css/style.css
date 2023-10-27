@@ -79,3 +79,11 @@ body{
   font-size: x-small;
 }
 
+
+@media (max-width: 480px) {
+  .game{
+   
+    max-width: 75%;
+  }
+  
+}
